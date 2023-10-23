@@ -114,15 +114,23 @@ class EigenvalueDrawing(Slide):
 class EigenvalueDrawingExample(Slide):
     def construct(self):
         title = Tex("Drawing Graphs with Eigenvalues").scale(0.5).to_corner(UL)
-        with open("graph.pkl", "rb") as f:
-            obj = pickle.load(f)
-        print(obj)
 
         self.play(Write(title))
         self.wait()
         self.next_slide()
 
-        # graph = Graph()
+        # plot image
+        original = ImageMobject("original.png").scale_to_fit_width(10)
+
+        self.play(FadeIn(original))
+        self.wait()
+        self.next_slide()
+
+        # plot image
+        spectral = ImageMobject("spectral.png").scale_to_fit_width(10)
+        self.play(FadeTransform(original, spectral))
+        self.wait()
+        self.next_slide()
 
 class EigenvalueDrawingOptimality(Slide):
     def construct(self):
