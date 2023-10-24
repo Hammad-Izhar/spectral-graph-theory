@@ -437,7 +437,7 @@ class CourantFischerTheorem(Slide):
 
         self.next_slide()
 
-        step1 = Tex(r"(1) Show that $\lambda_k$ bounds the Rayleigh quotient for all $k$-dimensional subspaces").scale(0.5).shift(0.5 * DOWN)
+        step1 = Tex(r"(1) Show that $\lambda_k$ bounds the Rayleigh quotient for all $k$-dimensional subspaces").scale(0.5).shift(0.5 * DOWN).to_edge(LEFT)
         step2 = Tex(r"(2) Show that $\lambda_k$ is attained by some $k$-dimensional subspace").scale(0.5).next_to(step1, 0.5 * DOWN, aligned_edge=LEFT)
 
         self.play(Write(step1))
@@ -512,7 +512,7 @@ class CourantFischerTheorem(Slide):
         bound4 = MathTex("=", r"\lambda_k \cdot \frac{\sum_{i = 1}^k \alpha_i^2}{\sum_{i = 1}^k \alpha_i^2}").scale(0.6).next_to(bound3, 0.6 * RIGHT)
         bound5 = MathTex("=", r"\lambda_k").scale(0.6).next_to(bound4, 0.6 * RIGHT)
 
-        upshot = MathTex(r"\implies", r"\min_{\substack{x \in S \\ x \neq 0}} \frac{x^TMx}{x^Tx} \geq \mu_k").scale(0.6).to_edge(UP).shift(4 * DOWN)
+        upshot = MathTex(r"\implies", r"\min_{\substack{x \in S \\ x \neq 0}} \frac{x^TMx}{x^Tx} \geq \lambda_k").scale(0.6).to_edge(UP).shift(4 * DOWN)
 
         self.play(Write(S))
         self.next_slide()

@@ -134,7 +134,7 @@ class EigenvalueDrawingExample(Slide):
 
 class EigenvalueDrawingOptimality(Slide):
     def construct(self):
-        title = Tex(r"\textbf{Optimality of Eigenvalue Drawing}").scale(0.5).to_corner(UL)
+        title = Tex(r"Optimality of Eigenvalue Drawing").scale(0.5).to_corner(UL)
         assumption = Tex(r"Let $L$ be a Laplacian matrix with eigenvalues $\lambda_1 \leq \cdots \leq \lambda_n$ and corresponding unit eigenvectors $v_1, \cdots, v_n$. \\ Let $x_1, \cdots, x_k$ be orthonormal vectors that are orthogonal to $v_1$. Then:", tex_environment=None).scale(0.5).next_to(title, DOWN, aligned_edge=LEFT) # type: ignore
         equation = MathTex(r"\sum_{i=1}^k x_i^TLx_i \geq \sum_{i = 2}^{k + 1} \lambda_i").scale(0.6).shift(UP)
 
