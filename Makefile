@@ -13,6 +13,8 @@ wilf:
 perron-frobenius:
 	manim perron-frobenius.py
 	manim-slides Perron_Frobenius_Statement Perron_Frobenius_Lemma Perron_Frobenius_Proof
+all:
+	manim-slides RayleighQuotientDefinition RayleighExampleOne RayleighEigenvectors RayleighExampleTwo CourantFischerTheorem LaplacianDefinition EigenvalueDrawing EigenvalueDrawingOptimality
 
 courant-fischer:
 	manim courant-fischer.py
@@ -20,4 +22,4 @@ courant-fischer:
 
 graph-drawing:
 	manim graph-drawing.py
-	manim-slides LaplacianDefinition EigenvalueDrawing EigenvalueDrawingOptimality
+	manim-slides LaplacianDefinition EigenvalueDrawing EigenvalueDrawingExample EigenvalueDrawingOptimality
