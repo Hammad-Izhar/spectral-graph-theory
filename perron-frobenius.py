@@ -253,7 +253,7 @@ class Perron_Frobenius_Proof(Slide):
         step3 = MathTex(r"\mu_2", r"\leq", r"z^T A_G z")
         step4 = MathTex(r"\mu_2", r"\leq", r"u_1")
         
-        step1.next_to(let_3, DOWN, buff=0.5)
+        step1.next_to(let_4, DOWN, buff=0.5)
         self.play(Write(step1))
 
         for prev_step, next_step in [(step1, step2), (step2, step3), (step3, step4)]:
