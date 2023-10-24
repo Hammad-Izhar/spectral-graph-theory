@@ -1,3 +1,11 @@
+intro:
+	manim intro.py
+	manim-slides Intro
+
+eigenvalue-bound:
+	manim eigenvalue-bound.py
+	manim-slides Eigenvalue_Bound
+
 wilf:
 	manim wilf.py
 	manim-slides Wilf_Theorem
