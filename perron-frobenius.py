@@ -31,7 +31,7 @@ class Perron_Frobenius_Statement(Slide):
             self.play(Write(statement))
             self.next_slide()
 
-        self.play(Unwrite(title), Unwrite(assumption_1), Unwrite(assumption_2), Unwrite(statement_1), Unwrite(statement_2), Unwrite(statement_3))
+        self.play(Unwrite(title), Unwrite(goal), Unwrite(assumption_1), Unwrite(assumption_2), Unwrite(statement_1), Unwrite(statement_2), Unwrite(statement_3))
         self.wait()
 
 class Perron_Frobenius_Lemma(Slide):
