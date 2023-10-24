@@ -70,7 +70,7 @@ class Eigenvalue_Bound(Slide):
         self.next_slide()
 
         # Proof of upper bound
-        let = Tex(r"Let $\phi_1$ be an eigenvector of $\mu_1$ with $\phi[v]\geq \phi[u]$")
+        let = Tex(r"Let $\phi_1$ be an eigenvector of $\mu_1$ with $\phi_1[v]\geq \phi_1[u]$")
         let.next_to(statement, DOWN, buff=0.5)
         self.play(Write(let))
         self.next_slide()
